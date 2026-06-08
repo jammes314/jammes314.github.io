@@ -77,7 +77,8 @@ body {
 }
 
 body {
-  background: var(--color-accent); /* red side bars */
+  background: var(--color-accent-dark);
+  color: var(--color-text);
 }
 
 .wrapper {
