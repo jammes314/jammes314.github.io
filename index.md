@@ -1,7 +1,16 @@
-# My Blog
+---
+layout: home
+title: Home
+---
 
-Welcome to my blog.
+# Welcome
 
-## Posts
+Hi, I'm Jammes. This is my personal blog where I write about mathematics (analisis), programming, and personal projects.
 
-Coming soon.
+## Topics
+
+- Mathematics
+- Machine Learning
+- Exercises
+- Personal Blog
+- Digital Drawing and Writing
