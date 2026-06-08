@@ -66,3 +66,25 @@ pre {
   padding: 1rem;
   overflow-x: auto;
 }
+/* =========================================================
+   RED SIDE BARS
+   ========================================================= */
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--color-accent); /* red side bars */
+}
+
+.wrapper {
+  max-width: 930px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 60px 70px;
+  background: var(--color-bg);
+  box-sizing: border-box;
+}
