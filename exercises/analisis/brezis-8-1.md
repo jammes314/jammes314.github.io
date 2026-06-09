@@ -1,11 +1,8 @@
 ---
-
 layout: page
-title: "Brezis 8.1"
-section: "Análisis"
-topic: "Brezis"
+title: Brezis 8.1
 permalink: /exercises/analisis/brezis-8-1/
-------------------------------------------
+---
 
 # Brezis 8.1
 
