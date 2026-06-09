@@ -1,8 +1,7 @@
 ---
-
 layout: page
-title: Brezis 8.1
------------------
+title: "Brezis 8.1"
+---
 
 <script>
 window.MathJax = {
