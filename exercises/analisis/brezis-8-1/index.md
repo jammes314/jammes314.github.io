@@ -59,7 +59,7 @@ u\in L^p(\mathbb{R})
 u'\in L^p(\mathbb{R}).
 $$
 
-1. The case (p=\infty)
+1. The case $(p=\infty)$
 
 $$
 u(x)=
@@ -79,7 +79,7 @@ $$
 $$
 
 we get
-
+$$
 \frac{1}{(1+x^2)^{\frac{\alpha}{2}}\log(2+x^2)}
 \le
 \frac{1}{\log 2}.
@@ -91,9 +91,9 @@ $$
 u\in L^\infty(\mathbb{R}).
 $$
 
-2. The case (\frac{1}{\alpha}\le p<+\infty)
+2. The case $(\frac{1}{\alpha}\le p<+\infty)$
 
-Since (u) is continuous, it is enough to study its behavior as (|x|\to+\infty).
+Since (u) is continuous, it is enough to study its behavior as $(|x|\to+\infty).$
 
 For large (|x|),
 
@@ -175,7 +175,7 @@ dv=\frac{1}{x},dx,
 $$
 
 we obtain
-
+$$
 \int_{\log R}^{+\infty}
 \frac{1}{v^p},dv.
 $$
@@ -323,7 +323,7 @@ $$
 \beta=\alpha q<1.
 $$
 
-Choose (\gamma) such that
+Choose $\gamma$ such that
 
 $$
 \beta<\gamma<1.
@@ -335,7 +335,7 @@ $$
 \varepsilon=\gamma-\beta>0.
 $$
 
-For (x) large enough,
+For $x$ large enough,
 
 $$
 (\log x)^q\le x^\varepsilon.
@@ -343,6 +343,10 @@ $$
 
 Therefore,
 
+$$
+x^\beta(\log x)^q
+\le
+x^\beta x^\varepsilon
 x^\gamma.
 $$
 
@@ -356,6 +360,8 @@ $$
 
 But
 
+$$
+\int_R^{+\infty}\frac{1}{x^\gamma},dx
 +\infty,
 \qquad
 \gamma<1.
@@ -363,6 +369,8 @@ $$
 
 Therefore,
 
+$$
+\int_R^{+\infty}|u(x)|^q,dx
 +\infty.
 $$
 
