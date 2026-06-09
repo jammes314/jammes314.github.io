@@ -12,4 +12,4 @@ Here I will upload exercises, solutions, and practice problems.
 
 ## Análisis
 
-- [Brezis 8.1](/exercises/analisis/brezis-8-1/)
+- [Brezis 8.1](/exercises/analisis/Brezis-8-1/)
