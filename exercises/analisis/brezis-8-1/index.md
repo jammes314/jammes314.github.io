@@ -207,20 +207,22 @@ $$
 3. Integrability of the derivative
 
 We compute
-
+$$
 (1+x^2)^{-\frac{\alpha}{2}}
 \left(\log(2+x^2)\right)^{-1}.
 $$
 
 Then
 
+$$
 (1+x^2)^{-\frac{\alpha}{2}}
 \frac{2x}{(2+x^2)(\log(2+x^2))^2}.
 \end{aligned}
 $$
 
-Factoring (u(x)), we get
+Factoring $(u(x))$, we get
 
+$$
 \frac{2x}{(2+x^2)\log(2+x^2)}
 \right).
 $$
@@ -264,6 +266,7 @@ $$
 
 Thus,
 
+$$
 |uh|_p
 \le
 |u|p|h|\infty
@@ -292,8 +295,8 @@ $$
 1\le q<\frac{1}{\alpha}.
 $$
 
-For large (x),
-
+For large $(x)$,
+$$
 \frac{1}{2x^\alpha\log x}.
 $$
 
