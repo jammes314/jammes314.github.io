@@ -1,8 +1,21 @@
+```markdown
 ---
 layout: page
 title: Brezis 8.1
 permalink: /exercises/analisis/brezis-8-1/
 ---
+
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true
+  }
+};
+</script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 # Brezis 8.1
 
@@ -114,7 +127,7 @@ $$
 Thus, it is enough to study
 
 $$
-\int_R^{+\infty}\frac{1}{x^{\alpha p}(\log x)^p},dx.
+\int_R^{+\infty}\frac{1}{x^{\alpha p}(\log x)^p}\,dx.
 $$
 
 If
@@ -146,7 +159,7 @@ $$
 Hence we study
 
 $$
-\int_R^{+\infty}\frac{1}{x(\log x)^p},dx.
+\int_R^{+\infty}\frac{1}{x(\log x)^p}\,dx.
 $$
 
 Using the change of variables
@@ -154,13 +167,13 @@ Using the change of variables
 $$
 v=\log x,
 \qquad
-dv=\frac{1}{x},dx,
+dv=\frac{1}{x}\,dx,
 $$
 
 we obtain
 
 $$
-\int_{\log R}^{+\infty}\frac{1}{v^p},dv.
+\int_{\log R}^{+\infty}\frac{1}{v^p}\,dv.
 $$
 
 Since $0<\alpha<1$, we have
@@ -189,10 +202,9 @@ we get
 
 $$
 u'(x)
-=====
-
-## -\alpha x(1+x^2)^{-\frac{\alpha}{2}-1}\left(\log(2+x^2)\right)^{-1}
-
+=
+-\alpha x(1+x^2)^{-\frac{\alpha}{2}-1}\left(\log(2+x^2)\right)^{-1}
+-
 (1+x^2)^{-\frac{\alpha}{2}}
 \frac{2x}{(2+x^2)(\log(2+x^2))^2}.
 $$
@@ -201,13 +213,11 @@ Factoring $u(x)$, we obtain
 
 $$
 u'(x)
-=====
-
+=
 u(x)
 \left(
 \frac{-\alpha x}{1+x^2}
------------------------
-
+-
 \frac{2x}{(2+x^2)\log(2+x^2)}
 \right).
 $$
@@ -216,10 +226,9 @@ Define
 
 $$
 h(x)
-====
-
-## \frac{-\alpha x}{1+x^2}
-
+=
+\frac{-\alpha x}{1+x^2}
+-
 \frac{2x}{(2+x^2)\log(2+x^2)}.
 $$
 
@@ -250,12 +259,11 @@ $$
 Thus,
 
 $$
-|u'|_p
-======
-
-|uh|_p
+\|u'\|_p
+=
+\|uh\|_p
 \le
-|u|*p|h|*\infty.
+\|u\|_p\|h\|_\infty.
 $$
 
 Since $u\in L^p(\mathbb{R})$, we conclude that
@@ -294,8 +302,7 @@ For large $x$,
 
 $$
 u(x)\sim \frac{1}{x^\alpha\log(x^2)}
-====================================
-
+=
 \frac{1}{2x^\alpha\log x}.
 $$
 
@@ -349,8 +356,7 @@ $$
 x^\beta(\log x)^q
 \le
 x^\beta x^\varepsilon
-=====================
-
+=
 x^\gamma.
 $$
 
@@ -365,13 +371,13 @@ $$
 But
 
 $$
-\int_R^{+\infty}\frac{1}{x^\gamma},dx=+\infty
+\int_R^{+\infty}\frac{1}{x^\gamma}\,dx=+\infty
 $$
 
 because $\gamma<1$. Hence,
 
 $$
-\int_R^{+\infty}|u(x)|^q,dx=+\infty.
+\int_R^{+\infty}|u(x)|^q\,dx=+\infty.
 $$
 
 Therefore,
@@ -383,3 +389,4 @@ u\notin L^q(\mathbb{R})
 $$
 
 This proves the result.
+```
