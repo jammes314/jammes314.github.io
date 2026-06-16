@@ -1,3 +1,4 @@
+```markdown
 ---
 layout: page
 title: "Brezis 8.1"
@@ -22,16 +23,22 @@ window.MathJax = {
 Consider the function
 
 $$
-u(x)=(1+x^2)^{-\frac{\alpha}{2}}\left(\log(2+x^2)\right)^{-1},
+u(x)=(1+x^2)^{-\frac{\alpha}{2}}\big(\log(2+x^2)\big)^{-1},
 \qquad x\in\mathbb{R},
 $$
 
-with $0<\alpha<1$. Check that
+where
+
+$$
+0<\alpha<1.
+$$
+
+Prove that
 
 $$
 u\in W^{1,p}(\mathbb{R})
 \qquad
-\forall p\in \left[\frac{1}{\alpha},+\infty\right],
+\text{for every }p\in\left[\frac{1}{\alpha},+\infty\right],
 $$
 
 and that
@@ -39,50 +46,55 @@ and that
 $$
 u\notin L^q(\mathbb{R})
 \qquad
-\forall q\in \left[1,\frac{1}{\alpha}\right).
+\text{for every }q\in\left[1,\frac{1}{\alpha}\right).
 $$
 
 ## Solución
 
-$$
-\text{We prove first that }
-u\in W^{1,p}(\mathbb{R})
-\quad
-\forall p\in\left[\frac{1}{\alpha},+\infty\right].
-$$
+We prove first that
 
 $$
 u\in W^{1,p}(\mathbb{R})
-\iff
+\qquad
+\text{for every }p\in\left[\frac{1}{\alpha},+\infty\right].
+$$
+
+Recall that
+
+$$
+u\in W^{1,p}(\mathbb{R})
+\quad
+\Longleftrightarrow
+\quad
 u\in L^p(\mathbb{R})
-\quad\text{and}\quad
+\text{ and }
 u'\in L^p(\mathbb{R}).
 $$
 
-1. The case $(p=\infty)$
+## Step 1: The case p equals infinity
+
+We have
 
 $$
-u(x)=
-\frac{1}{(1+x^2)^{\frac{\alpha}{2}}\log(2+x^2)}.
+u(x)=\frac{1}{(1+x^2)^{\frac{\alpha}{2}}\log(2+x^2)}.
 $$
 
 Since
 
 $$
-(1+x^2)^{\frac{\alpha}{2}}\ge 1
+(1+x^2)^{\frac{\alpha}{2}}\geq 1
 $$
 
 and
 
 $$
-\log(2+x^2)\ge \log 2,
+\log(2+x^2)\geq \log 2,
 $$
 
-we get
+we obtain
+
 $$
-\frac{1}{(1+x^2)^{\frac{\alpha}{2}}\log(2+x^2)}
-\le
-\frac{1}{\log 2}.
+0<u(x)\leq \frac{1}{\log 2}.
 $$
 
 Therefore,
@@ -91,11 +103,27 @@ $$
 u\in L^\infty(\mathbb{R}).
 $$
 
-2. The case $(\frac{1}{\alpha}\le p<+\infty)$
+## Step 2: The case p finite
 
-Since (u) is continuous, it is enough to study its behavior as $(|x|\to+\infty).$
+Assume that
 
-For large (|x|),
+$$
+\frac{1}{\alpha}\leq p<+\infty.
+$$
+
+Since the function is continuous, it is enough to study the behavior when
+
+$$
+|x|\to+\infty.
+$$
+
+For large values of
+
+$$
+|x|,
+$$
+
+we have
 
 $$
 1+x^2\sim x^2,
@@ -112,16 +140,13 @@ $$
 Hence,
 
 $$
-|u(x)|^p
-\sim
-\frac{1}{|x|^{\alpha p}(\log |x|)^p}.
+|u(x)|^p\sim \frac{1}{|x|^{\alpha p}(\log |x|)^p}.
 $$
 
-Thus, we study
+Thus, it is enough to study
 
 $$
-\int_R^{+\infty}
-\frac{1}{x^{\alpha p}(\log x)^p},dx.
+\int_R^{+\infty}\frac{1}{x^{\alpha p}(\log x)^p}\,dx.
 $$
 
 If
@@ -133,21 +158,19 @@ $$
 then
 
 $$
-\alpha p>1,
+\alpha p>1.
 $$
 
-and therefore
+Therefore,
 
 $$
-\int_R^{+\infty}
-\frac{1}{x^{\alpha p}(\log x)^p},dx
-\le
-\int_R^{+\infty}
-\frac{1}{x^{\alpha p}},dx
+\int_R^{+\infty}\frac{1}{x^{\alpha p}(\log x)^p}\,dx
+\leq
+\int_R^{+\infty}\frac{1}{x^{\alpha p}}\,dx
 <+\infty.
 $$
 
-Now suppose
+Now suppose that
 
 $$
 p=\frac{1}{\alpha}.
@@ -156,82 +179,90 @@ $$
 Then
 
 $$
-\alpha p=1,
+\alpha p=1.
 $$
 
-and we need to study
+So we need to study
 
 $$
-\int_R^{+\infty}
-\frac{1}{x(\log x)^p},dx.
+\int_R^{+\infty}\frac{1}{x(\log x)^p}\,dx.
 $$
 
-Using the change of variables
+Use the change of variables
 
 $$
-v=\log x,
+s=\log x,
 \qquad
-dv=\frac{1}{x},dx,
+ds=\frac{1}{x}\,dx.
 $$
 
-we obtain
+Then
+
 $$
-\int_{\log R}^{+\infty}
-\frac{1}{v^p},dv.
+\int_R^{+\infty}\frac{1}{x(\log x)^p}\,dx
+=
+\int_{\log R}^{+\infty}\frac{1}{s^p}\,ds.
 $$
 
 Since
 
 $$
 0<\alpha<1,
-\qquad
-p=\frac{1}{\alpha}>1,
 $$
 
 we have
 
 $$
-\int_{\log R}^{+\infty}
-\frac{1}{v^p},dv
-<+\infty.
+p=\frac{1}{\alpha}>1.
 $$
 
 Therefore,
 
 $$
+\int_{\log R}^{+\infty}\frac{1}{s^p}\,ds<+\infty.
+$$
+
+Hence,
+
+$$
 u\in L^p(\mathbb{R})
-\quad
-\forall p\in\left[\frac{1}{\alpha},+\infty\right].
+\qquad
+\text{for every }p\in\left[\frac{1}{\alpha},+\infty\right].
 $$
 
-3. Integrability of the derivative
+## Step 3: Integrability of the derivative
 
-We compute
-$$
-(1+x^2)^{-\frac{\alpha}{2}}
-\left(\log(2+x^2)\right)^{-1}.
-$$
-
-Then
+We compute the derivative of
 
 $$
-(1+x^2)^{-\frac{\alpha}{2}}
-\frac{2x}{(2+x^2)(\log(2+x^2))^2}.
-\end{aligned}
+u(x)=(1+x^2)^{-\frac{\alpha}{2}}\big(\log(2+x^2)\big)^{-1}.
 $$
 
-Factoring $(u(x))$, we get
+By the product rule,
 
 $$
-\frac{2x}{(2+x^2)\log(2+x^2)}
-\right).
+u'(x)=
+-\frac{\alpha x}{1+x^2}(1+x^2)^{-\frac{\alpha}{2}}\big(\log(2+x^2)\big)^{-1}
+-
+(1+x^2)^{-\frac{\alpha}{2}}\frac{2x}{(2+x^2)\big(\log(2+x^2)\big)^2}.
+$$
+
+Factoring
+
+$$
+u(x),
+$$
+
+we obtain
+
+$$
+u'(x)=u(x)\bigg(-\frac{\alpha x}{1+x^2}-\frac{2x}{(2+x^2)\log(2+x^2)}\bigg).
 $$
 
 Define
 
-\frac{-\alpha x}{1+x^2}
-
-\frac{2x}{(2+x^2)\log(2+x^2)}.
+$$
+h(x)=-\frac{\alpha x}{1+x^2}-\frac{2x}{(2+x^2)\log(2+x^2)}.
 $$
 
 Then
@@ -243,69 +274,97 @@ $$
 Moreover,
 
 $$
-\frac{-\alpha x}{1+x^2}\to 0
-\quad
-\text{as }
-|x|\to+\infty,
+-\frac{\alpha x}{1+x^2}\to 0
+\qquad
+\text{as }|x|\to+\infty,
 $$
 
 and
 
 $$
-\frac{2x}{(2+x^2)\log(2+x^2)}\to 0
-\quad
-\text{as }
-|x|\to+\infty.
-$$
-
-Hence (h) is continuous and bounded on (\mathbb{R}). Therefore,
-
-$$
-h\in L^\infty(\mathbb{R}).
+-\frac{2x}{(2+x^2)\log(2+x^2)}\to 0
+\qquad
+\text{as }|x|\to+\infty.
 $$
 
 Thus,
 
 $$
-|uh|_p
-\le
-|u|p|h|\infty
+h\in L^\infty(\mathbb{R}).
+$$
+
+Therefore, for every finite
+
+$$
+p\in\left[\frac{1}{\alpha},+\infty\right),
+$$
+
+we have
+
+$$
+\|u'\|_{L^p(\mathbb{R})}
+=
+\|uh\|_{L^p(\mathbb{R})}
+\leq
+\|h\|_{L^\infty(\mathbb{R})}\|u\|_{L^p(\mathbb{R})}
 <+\infty.
 $$
 
-Therefore,
+For
 
 $$
-u'\in L^p(\mathbb{R}).
+p=+\infty,
+$$
+
+we also have
+
+$$
+\|u'\|_{L^\infty(\mathbb{R})}
+\leq
+\|h\|_{L^\infty(\mathbb{R})}\|u\|_{L^\infty(\mathbb{R})}
+<+\infty.
+$$
+
+Hence,
+
+$$
+u'\in L^p(\mathbb{R})
+\qquad
+\text{for every }p\in\left[\frac{1}{\alpha},+\infty\right].
 $$
 
 Consequently,
 
 $$
 u\in W^{1,p}(\mathbb{R})
-\quad
-\forall p\in\left[\frac{1}{\alpha},+\infty\right].
+\qquad
+\text{for every }p\in\left[\frac{1}{\alpha},+\infty\right].
 $$
 
-4. Non-integrability for (q<\frac{1}{\alpha})
+## Step 4: Non-integrability for q less than 1 over alpha
 
 Let
 
 $$
-1\le q<\frac{1}{\alpha}.
+1\leq q<\frac{1}{\alpha}.
 $$
 
-For large $(x)$,
-$$
-\frac{1}{2x^\alpha\log x}.
-$$
-
-Hence,
+For large values of
 
 $$
-|u(x)|^q
-\sim
-\frac{1}{x^{\alpha q}(\log x)^q}.
+x,
+$$
+
+we have
+
+$$
+u(x)\sim \frac{1}{2x^\alpha\log x}.
+$$
+
+Therefore,
+
+$$
+|u(x)|^q\sim \frac{1}{x^{\alpha q}(\log x)^q}.
 $$
 
 Let
@@ -326,7 +385,13 @@ $$
 \beta=\alpha q<1.
 $$
 
-Choose $\gamma$ such that
+Choose
+
+$$
+\gamma
+$$
+
+such that
 
 $$
 \beta<\gamma<1.
@@ -338,52 +403,57 @@ $$
 \varepsilon=\gamma-\beta>0.
 $$
 
-For $x$ large enough,
+For large enough
 
 $$
-(\log x)^q\le x^\varepsilon.
+x,
 $$
 
-Therefore,
+we have
 
 $$
-x^\beta(\log x)^q
-\le
-x^\beta x^\varepsilon
-x^\gamma.
-$$
-
-Thus,
-
-$$
-\frac{1}{x^\beta(\log x)^q}
-\ge
-\frac{1}{x^\gamma}.
-$$
-
-But
-
-$$
-\int_R^{+\infty}\frac{1}{x^\gamma},dx
-+\infty,
-\qquad
-\gamma<1.
+(\log x)^q\leq x^\varepsilon.
 $$
 
 Therefore,
 
 $$
-\int_R^{+\infty}|u(x)|^q,dx
-+\infty.
+x^\beta(\log x)^q\leq x^\beta x^\varepsilon=x^\gamma.
+$$
+
+Hence,
+
+$$
+\frac{1}{x^\beta(\log x)^q}\geq \frac{1}{x^\gamma}.
+$$
+
+Since
+
+$$
+\gamma<1,
+$$
+
+we have
+
+$$
+\int_R^{+\infty}\frac{1}{x^\gamma}\,dx=+\infty.
+$$
+
+Therefore,
+
+$$
+\int_R^{+\infty}|u(x)|^q\,dx=+\infty.
 $$
 
 Hence,
 
 $$
 u\notin L^q(\mathbb{R})
-\quad
-\forall q\in\left[1,\frac{1}{\alpha}\right).
+\qquad
+\text{for every }q\in\left[1,\frac{1}{\alpha}\right).
 $$
 
 This proves the result.
+```
+
 
