@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Brezis 9.17: detalle auxiliar — Lema 9.6"
-permalink: /exercises/analisis/brezis-9-17/
+title: " Lema 9.6"
+permalink: /exercises/analisis/brezis-9-6/
 ---
 
 <script>
@@ -15,7 +15,6 @@ window.MathJax = {
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-# Brezis 9.17: detalle auxiliar — Lema 9.6
 
 En este post se transcribe y ordena el detalle del argumento de cocientes de diferencias tangenciales en el semiespacio. La idea central es probar primero la estimación para funciones suaves y luego pasar al límite por densidad en $H^1(\Omega)$.
 
