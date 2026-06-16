@@ -1,8 +1,8 @@
 
 ---
-layout: page
+layout: null
 title: "Brezis Lemma 9.6"
-
+permalink: /exercises/analisis/brezis-9-6/
 ---
 
 <script>
@@ -16,26 +16,6 @@ window.MathJax = {
 </script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-
-<style>
-body {
-  background: #ffffff !important;
-}
-
-main,
-.page-content,
-.wrapper,
-.post,
-.post-content,
-article {
-  background: #ffffff !important;
-  color: #2D355C !important;
-}
-
-mjx-container {
-  color: #2D355C !important;
-}
-</style>
 
 # Brezis Lemma 9.6
 
