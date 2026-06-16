@@ -37,7 +37,6 @@ mjx-container {
 
 # Brezis 8.1
 
-## Enunciado
 
 Consider the function
 
@@ -68,7 +67,7 @@ u\notin L^q(\mathbb{R})
 \text{for every }q\in\big[1,\frac{1}{\alpha}\big).
 $$
 
-## Solución
+## Solution
 
 We first prove that
 
