@@ -1,7 +1,7 @@
-
 ---
 layout: page
 title: "Brezis Lemma 9.6"
+permalink: /exercises/analisis/brezis-9-6/
 ---
 
 <script>
@@ -35,6 +35,7 @@ mjx-container {
   color: #2D355C !important;
 }
 </style>
+
 
 # Brezis Lemma 9.6
 
