@@ -24,10 +24,10 @@ Consider the function
 
 $$
 u(x)=(1+x^2)^{-\frac{\alpha}{2}}\big(\log(2+x^2)\big)^{-1},
-\qquad x\in\mathbb{R},
+\qquad x\in\mathbb{R}.
 $$
 
-where
+Assume that
 
 $$
 0<\alpha<1.
@@ -38,7 +38,7 @@ Prove that
 $$
 u\in W^{1,p}(\mathbb{R})
 \qquad
-\text{for every }p\in\left[\frac{1}{\alpha},+\infty\right],
+\text{for every }p\in\big[\frac{1}{\alpha},+\infty\big],
 $$
 
 and that
@@ -46,28 +46,26 @@ and that
 $$
 u\notin L^q(\mathbb{R})
 \qquad
-\text{for every }q\in\left[1,\frac{1}{\alpha}\right).
+\text{for every }q\in\big[1,\frac{1}{\alpha}\big).
 $$
 
 ## Solución
 
-We prove first that
+We first prove that
 
 $$
 u\in W^{1,p}(\mathbb{R})
 \qquad
-\text{for every }p\in\left[\frac{1}{\alpha},+\infty\right].
+\text{for every }p\in\big[\frac{1}{\alpha},+\infty\big].
 $$
 
 Recall that
 
 $$
 u\in W^{1,p}(\mathbb{R})
-\quad
-\Longleftrightarrow
-\quad
+\quad\Longleftrightarrow\quad
 u\in L^p(\mathbb{R})
-\text{ and }
+\quad\text{and}\quad
 u'\in L^p(\mathbb{R}).
 $$
 
@@ -128,10 +126,10 @@ we have
 $$
 1+x^2\sim x^2,
 \qquad
-(1+x^2)^{-\frac{\alpha}{2}}\sim |x|^{-\alpha},
+(1+x^2)^{-\frac{\alpha}{2}}\sim |x|^{-\alpha}.
 $$
 
-and
+Also,
 
 $$
 \log(2+x^2)\sim \log(x^2)=2\log |x|.
@@ -227,7 +225,7 @@ Hence,
 $$
 u\in L^p(\mathbb{R})
 \qquad
-\text{for every }p\in\left[\frac{1}{\alpha},+\infty\right].
+\text{for every }p\in\big[\frac{1}{\alpha},+\infty\big].
 $$
 
 ## Step 3: Integrability of the derivative
@@ -241,10 +239,8 @@ $$
 By the product rule,
 
 $$
-u'(x)=
--\frac{\alpha x}{1+x^2}(1+x^2)^{-\frac{\alpha}{2}}\big(\log(2+x^2)\big)^{-1}
--
-(1+x^2)^{-\frac{\alpha}{2}}\frac{2x}{(2+x^2)\big(\log(2+x^2)\big)^2}.
+u'(x)=-\frac{\alpha x}{1+x^2}(1+x^2)^{-\frac{\alpha}{2}}\big(\log(2+x^2)\big)^{-1}
+-(1+x^2)^{-\frac{\alpha}{2}}\frac{2x}{(2+x^2)\big(\log(2+x^2)\big)^2}.
 $$
 
 Factoring
@@ -276,10 +272,10 @@ Moreover,
 $$
 -\frac{\alpha x}{1+x^2}\to 0
 \qquad
-\text{as }|x|\to+\infty,
+\text{as }|x|\to+\infty.
 $$
 
-and
+Also,
 
 $$
 -\frac{2x}{(2+x^2)\log(2+x^2)}\to 0
@@ -296,7 +292,7 @@ $$
 Therefore, for every finite
 
 $$
-p\in\left[\frac{1}{\alpha},+\infty\right),
+p\in\big[\frac{1}{\alpha},+\infty\big),
 $$
 
 we have
@@ -330,7 +326,7 @@ Hence,
 $$
 u'\in L^p(\mathbb{R})
 \qquad
-\text{for every }p\in\left[\frac{1}{\alpha},+\infty\right].
+\text{for every }p\in\big[\frac{1}{\alpha},+\infty\big].
 $$
 
 Consequently,
@@ -338,7 +334,7 @@ Consequently,
 $$
 u\in W^{1,p}(\mathbb{R})
 \qquad
-\text{for every }p\in\left[\frac{1}{\alpha},+\infty\right].
+\text{for every }p\in\big[\frac{1}{\alpha},+\infty\big].
 $$
 
 ## Step 4: Non-integrability for q less than 1 over alpha
@@ -450,7 +446,7 @@ Hence,
 $$
 u\notin L^q(\mathbb{R})
 \qquad
-\text{for every }q\in\left[1,\frac{1}{\alpha}\right).
+\text{for every }q\in\big[1,\frac{1}{\alpha}\big).
 $$
 
 This proves the result.
