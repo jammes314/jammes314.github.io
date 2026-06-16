@@ -469,7 +469,5 @@ u\notin L^q(\mathbb{R})
 $$
 
 This proves the result.
-```
-
 
 
