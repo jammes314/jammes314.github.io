@@ -2,7 +2,7 @@
 ---
 layout: page
 title: "Brezis Lemma 9.6"
-permalink: /exercises/analisis/brezis-9-6/
+
 ---
 
 <script>
