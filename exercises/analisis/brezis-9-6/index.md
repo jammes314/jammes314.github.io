@@ -1,8 +1,41 @@
+
 ---
 layout: default
 title: "Brezis Lemma 9.6"
 permalink: /exercises/analisis/brezis-9-6/
 ---
+
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true
+  }
+};
+</script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+<style>
+body {
+  background: #ffffff !important;
+}
+
+main,
+.page-content,
+.wrapper,
+.post,
+.post-content,
+article {
+  background: #ffffff !important;
+  color: #2D355C !important;
+}
+
+mjx-container {
+  color: #2D355C !important;
+}
+</style>
 
 # Brezis Lemma 9.6
 
@@ -17,7 +50,7 @@ $$
 That is,
 
 $$
-\Omega=\lbrace x=(x',x_N)\in\mathbb{R}^{N}:x_N>0\rbrace.
+\Omega=\{x=(x',x_N)\in\mathbb{R}^{N}:x_N>0\}.
 $$
 
 The boundary of this set is
@@ -29,10 +62,10 @@ $$
 That is,
 
 $$
-\Gamma=\lbrace x=(x',x_N)\in\mathbb{R}^{N}:x_N=0\rbrace.
+\Gamma=\{x=(x',x_N)\in\mathbb{R}^{N}:x_N=0\}.
 $$
 
-We say that the vector \(h\) is parallel to the boundary if
+We say that the vector $h$ is parallel to the boundary if
 
 $$
 h\parallel\Gamma.
@@ -41,10 +74,10 @@ $$
 This means that
 
 $$
-h=(h',0)\in\mathbb{R}^{N-1}\times\lbrace 0\rbrace.
+h=(h',0)\in\mathbb{R}^{N-1}\times\{0\}.
 $$
 
-For \(h\neq 0\), define
+For $h\neq 0$, define
 
 $$
 D_hu(x)=\frac{\tau_hu(x)-u(x)}{|h|}.
@@ -96,7 +129,7 @@ $$
 
 ## Proof
 
-First, assume that \(u\) is smooth. More precisely, assume that
+First, assume that $u$ is smooth. More precisely, assume that
 
 $$
 u\in C_c^1(\mathbb{R}^{N}).
@@ -108,7 +141,7 @@ $$
 x\in\Omega.
 $$
 
-Since \(h\parallel\Gamma\), the vector \(h\) has no component in the direction \(x_N\). Therefore,
+Since $h\parallel\Gamma$, the vector $h$ has no component in the direction $x_N$. Therefore,
 
 $$
 x+th\in\Omega\qquad\text{for every }t\in[0,1].
@@ -138,7 +171,7 @@ $$
 u(x+h)-u(x)=\int_0^1 h\cdot\nabla u(x+th)\,dt.
 $$
 
-Dividing by \(|h|\), we obtain
+Dividing by $|h|$, we obtain
 
 $$
 D_hu(x)=\frac{u(x+h)-u(x)}{|h|}.
@@ -162,7 +195,7 @@ $$
 |D_hu(x)|^2\leq \int_0^1|\nabla u(x+th)|^2\,dt.
 $$
 
-Now integrate over \(\Omega\):
+Now integrate over $\Omega$:
 
 $$
 \int_{\Omega}|D_hu(x)|^2\,dx\leq \int_{\Omega}\int_0^1|\nabla u(x+th)|^2\,dt\,dx.
@@ -174,13 +207,13 @@ $$
 \int_{\Omega}|D_hu(x)|^2\,dx\leq \int_0^1\int_{\Omega}|\nabla u(x+th)|^2\,dx\,dt.
 $$
 
-For fixed \(t\in[0,1]\), use the change of variables
+For fixed $t\in[0,1]$, use the change of variables
 
 $$
 y=x+th.
 $$
 
-Since \(h\parallel\Gamma\), this change of variables maps \(\Omega\) onto itself. Therefore,
+Since $h\parallel\Gamma$, this change of variables maps $\Omega$ onto itself. Therefore,
 
 $$
 \int_{\Omega}|\nabla u(x+th)|^2\,dx=\int_{\Omega}|\nabla u(y)|^2\,dy.
@@ -192,7 +225,7 @@ $$
 \int_{\Omega}|D_hu(x)|^2\,dx\leq \int_0^1\int_{\Omega}|\nabla u(y)|^2\,dy\,dt.
 $$
 
-Since the inner integral does not depend on \(t\), we obtain
+Since the inner integral does not depend on $t$, we obtain
 
 $$
 \int_{\Omega}|D_hu(x)|^2\,dx\leq \int_{\Omega}|\nabla u(y)|^2\,dy.
@@ -250,7 +283,7 @@ $$
 \|D_hu_n-D_hu\|_{L^2(\Omega)}=\|D_h(u_n-u)\|_{L^2(\Omega)}.
 $$
 
-Using the definition of \(D_h\),
+Using the definition of $D_h$,
 
 $$
 \|D_h(u_n-u)\|_{L^2(\Omega)}=\frac{1}{|h|}\|\tau_h(u_n-u)-(u_n-u)\|_{L^2(\Omega)}.
@@ -259,10 +292,10 @@ $$
 By the triangle inequality,
 
 $$
-\|D_h(u_n-u)\|_{L^2(\Omega)}\leq \frac{1}{|h|}\Big(\|\tau_h(u_n-u)\|_{L^2(\Omega)}+\|u_n-u\|_{L^2(\Omega)}\Big).
+\|D_h(u_n-u)\|_{L^2(\Omega)}\leq \frac{1}{|h|}\big(\|\tau_h(u_n-u)\|_{L^2(\Omega)}+\|u_n-u\|_{L^2(\Omega)}\big).
 $$
 
-Since the translation is tangential, it preserves the \(L^2\)-norm on \(\Omega\). Hence,
+Since the translation is tangential, it preserves the $L^2$-norm on $\Omega$. Hence,
 
 $$
 \|\tau_h(u_n-u)\|_{L^2(\Omega)}=\|u_n-u\|_{L^2(\Omega)}.
@@ -326,7 +359,7 @@ $$
 h\parallel\Gamma
 $$
 
-means that \(h\) is tangent to the boundary of the half-space.
+means that $h$ is tangent to the boundary of the half-space.
 
 Therefore, if
 
@@ -340,7 +373,7 @@ $$
 x+th\in\Omega\qquad\text{for every }t\in[0,1].
 $$
 
-So we can use the fundamental theorem of calculus along the segment from \(x\) to \(x+h\).
+So we can use the fundamental theorem of calculus along the segment from $x$ to $x+h$.
 
 The final estimate is
 
@@ -349,3 +382,4 @@ $$
 $$
 
 This means that the tangential difference quotient is controlled by the weak gradient.
+
