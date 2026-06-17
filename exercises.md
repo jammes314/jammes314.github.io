@@ -15,4 +15,4 @@ Here I will upload exercises, solutions, and practice problems.
 - [Brezis 8.1](/exercises/analisis/brezis-8-1/)
 - [Brezis Lemma 9.6](/exercises/analisis/brezis-9-6/) 
 - [Brezis Theorem 9.17](/exercises/analisis/brezis-9-17/)
-- - [Brezis Theorem 9.17](/exercises/analisis/brezis-8-2/)
+- [Brezis Theorem 8.2](/exercises/analisis/brezis-8-2/)
