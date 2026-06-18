@@ -44,7 +44,7 @@ $$
 \text{for every }x\in(0,1)\setminus E.
 $$
 
-4. Prove that
+4.  Prove that
 
 $$
 u_{n_k}(x)\to \overline u(x)
