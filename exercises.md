@@ -16,3 +16,4 @@ Here I will upload exercises, solutions, and practice problems.
 - [Brezis Lemma 9.6](/exercises/analisis/brezis-9-6/) 
 - [Brezis Theorem 9.17](/exercises/analisis/brezis-9-17/)
 - [Brezis 8.2](/exercises/analisis/brezis-8-2/)
+- [Brezis 8.2](/exercises/analisis/brezis-8-3/)
